@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form, fieldset, legend{
+            border: 3px solid blue;
+            margin: 10px;
+            padding: 10px;
+            width: 80%;
+        }
+        legend{
+            background-color: red;
+        }
+        body{
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Persönliche Daten</legend>
+            <label for="Vorname">Vorname:</label><br>
+            <input type="text" id="Vorname" name="Vorname"><br>
+            <label for="Name">Name:</label><br>
+            <input type="text" id="Name" name="Name"><br>
+            <label for="Mailadresse">Mailadresse:</label><br>
+            <input type="email" id="Mailadresse" name="Mailadresse">
+        </fieldset>
+        <fieldset>
+            <legend>Ausbildung</legend>
+            Fachrichtung: <br>
+            <input type="radio" name="Fachrichtung" id="Fachrichtung" value="FIA">
+            <label for="Fachrichtung">FIA</label>
+            <input type="radio" name="Fachrichtung" id="Fachrichtung" value="FIS">
+            <label for="Fachrichtung">FIS</label>
+            <input type="radio" name="Fachrichtung" id="Fachrichtung" value="ITSE">
+            <label for="Fachrichtung">ITSE</label><br>
+            Vorwissen: <br>
+            <input type="checkbox" name="Vorwissen" id="Vorwissen" value="Hardware">
+            <label for="Vorwissen">Hardware</label>
+            <input type="checkbox" name="Vorwissen" id="Vorwissen" value="Software">
+            <label for="Vorwissen">Software</label>
+            <input type="checkbox" name="Vorwissen" id="Vorwissen" value="BWL">
+            <label for="Vorwissen">BWL</label>
+        </fieldset>
+        <fieldset>
+            <legend>Formulare senden/löschen</legend>
+            <input type="submit" name="senden" id="senden" value="ja,absenden!">
+            <input type="reset" name="löschen" id="löschen" value="nein, löschen!">
+        </fieldset>
+    </form>
+</body>
+</html>
