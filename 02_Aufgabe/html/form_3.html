@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aufgabe Formular 3</title>
+    <link rel="stylesheet" href="../css/form_3.css">
+</head>
+<body>
+    <!--form>fieldset*4-->
+    <form action="">
+        <fieldset>
+            <legend>Persönliche Angaben</legend>
+                <label for="Anrede">Anrede:</label>
+                <select name="anrede" id="anrede">
+                    <option value="Frau">Frau</option>
+                    <option value="Herr">Herr</option>
+                    <option value="Divers">Divers</option>
+                </select>
+                <!--(label+input:text)*3-->
+                <label for="vorname">Vorname:</label>
+                <input type="text" name="vorname" id="vorname">
+                <label for="nachname">Nachname:</label>
+                <input type="text" name="nachname" id="nachname">
+                <label for="email">EMail:</label>
+                <input type="email" name="email" id="email">
+        </fieldset>
+        <fieldset id="infofeld">
+            <legend>Infomaterial wählen</legend>
+                <p>Ich interessiere mich für folgende Land:</p>
+                    <!-- (input[type="radio" name="land" id="land" value=""]+label)*3 -->
+                    <input type="radio" name="land" id="land" value="de"><label for="land">Deutschland</label><br>
+                    <input type="radio" name="land" id="land" value="fr"><label for="land">Frankreich</label><br>
+                    <input type="radio" name="land" id="land" value="it" checked><label for="land">Italien</label>
+                <p>Ich möchte feolgende Verpflegung</p>
+                    <input type="checkbox" name="essen" id="esen" value="f"><label for="essen">Frühstück</label><br>
+                    <input type="checkbox" name="essen" id="esen" value="m"><label for="essen">Mittagessen</label><br>
+                    <input type="checkbox" name="essen" id="esen" value="a"><label for="essen">Abendessen</label>
+                </fieldset>
+        <fieldset>
+            <legend>Preisübersicht</legend>
+                <!-- table>tr*8>td*3 -->
+                <table>
+                    <tr>
+                        <th>Land</th>
+                        <th>Verpflegung</th>
+                        <th>Preis</th>
+                    </tr>
+                    <tr>
+                        <td>Deutschland</td>
+                        <td>Frühstück</td>
+                        <td>199.00</td>
+                    </tr>
+                    <tr>
+                        <td>Deutschland</td>
+                        <td>Mittagessen</td>
+                        <td>199.00</td>
+                    </tr>
+                    <tr>
+                        <td>Deutschland</td>
+                        <td>Abendessen</td>
+                        <td>299.00</td>
+                    </tr>
+                    <tr>
+                        <td>Frank/Italien</td>
+                        <td>Frühstück</td>
+                        <td>249.00</td>
+                    </tr>
+                    <tr>
+                        <td>Frank/Italien</td>
+                        <td>Mittagessen</td>
+                        <td>299.00</td>
+                    </tr>
+                    <tr>
+                        <td>Frank/Italien</td>
+                        <td>Abendessen</td>
+                        <td>319.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"> Der preis für Ihre Verpflegung berechnet sich entsprechend Ihrer Auswahl</td>   
+                    </tr>
+                </table>
+        </fieldset>
+        <fieldset>
+            <legend>Ab in der Urlaub</legend>
+                <input type="submit" value="Formular abschicken">
+                <input type="reset" value="Formular löschen">
+        </fieldset>
+    </form>
+</body>
+</html>

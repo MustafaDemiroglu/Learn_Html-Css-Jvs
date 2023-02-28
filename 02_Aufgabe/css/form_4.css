@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+    background-color: #003f4e;
+    color: #86c2bd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form{
+    width: 350px;
+}
+label{
+    display: block;
+    margin-top: 20px;
+}
+.inline{
+    display: inline;
+}
+fieldset, input, legend, select{
+    border-radius: 20px;
+    padding: 5px;
+}
+fieldset{
+    margin-bottom: 15px;
+}
+input[type=text], input[type=email],input[type=submit]{
+    width: 90%;
+}
+legend{
+    background-color: #86c2bd;
+    color: #003f4e;
+}
+p{
+    text-align: justify;
+}
+#links_legend{
+    text-align: left;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#auswahl{
+    width: 200px;
+}
+
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Sonnenschein</title>
+    <link rel="stylesheet" href="../css/form_1.css">
+</head>
+<body>
+    <img src="../../01_Demo/bilder/hotel.jpg" alt="bild vom Sonnenschein" width="250" align="left" hspace="10">
+    <h2>Willkommen im Hotel</h2>
+    <h1>Sonnenschein</h1>
+    <hr>
+    <p>Informieren Sie sich über aktuelle Angebote zur Eröffnung des Neubaus.</p>
+    <hr>
+    <form action="">
+        <label for="zimmer">Zimmerausstattung</label><br><br>
+        <select name="zimmer" id="zimmer">
+            <option value="e">einfach</option>
+            <option value="g">gehoben</option>
+            <option value="s">standard</option>
+            <option value="l">luxus</option>
+        </select>
+        <br><br>
+        <label for="zeit">Buchungszeit</label><br><br>
+        <input type="radio" name="zeit" value="v"><label for="zeit">Vorsaison (Mai/Jui)</label><br>
+        <input type="radio" name="zeit" value="h"><label for="zeit">Hauptsaison (Juli/August)</label><br>
+        <input type="radio" name="zeit" value="n"><label for="zeit">Nachsaison (Spetember)</label><br><br>
+        <label for="bt">Buchungstage:</label><input type="number" name="bt" id="bt" value="1">
+        <br><br>
+        <input type="submit" value="Senden">
+        <input type="reset" value="löschen">
+        <br><br>
+        <p>Anreise mit dem Auto: <a href="http://www.map24.de" target="_blank">map24</a></p>
+        <p>Anreise mit dem Bahn <a href="http://www.Bahnauskunft.de" target="_blank">Bahnauskunft</a></p>
+    </form>
+    
+</body>
+</html>

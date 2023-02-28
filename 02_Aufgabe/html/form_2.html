@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Sonnenschein</title>
+    <link rel="stylesheet" href="../css/form_2.css">
+</head>
+<body>
+    <h2>Buchungsfrage</h2>
+    <hr>
+    <p>Informieren Sie sich über die aktuellen Saisonpreise.</p>
+    <hr>
+    <img src="../../01_Demo/bilder/schildkroete.jpg" alt="bild vom Schildkröte" width="550px">
+    <form action="">
+        <label for="zimmer">Zimmerausstattung</label><br><br>
+        <select name="zimmer" id="zimmer">
+            <option value="e">einfach</option>
+            <option value="g">gehoben</option>
+            <option value="s">standard</option>
+            <option value="l">luxus</option>
+        </select>
+        <br><br>
+        <label for="zeit">Buchungszeit</label><br>
+        <input type="radio" name="zeit" value="v"><label for="zeit">Vorsaison (Mai/Jui)</label><br>
+        <input type="radio" name="zeit" value="h"><label for="zeit">Hauptsaison (Juli/August)</label><br>
+        <input type="radio" name="zeit" value="n"><label for="zeit">Nachsaison (Spetember)</label><br><br>
+        <label for="bt">Buchungstage:</label><br>
+        <input type="number" name="bt" id="bt" value="1" >
+        <br>
+        <input type="submit" value="Senden">
+        <input type="reset" value="löschen">
+    </form>
+    <p>Anreise mit dem Auto: <a href="http://www.map24.de" target="_blank">map24</a></p>
+    <p>Anreise mit dem Bahn <a href="http://www.Bahnauskunft.de" target="_blank">Bahnauskunft</a></p>
+    
+</body>
+</html>

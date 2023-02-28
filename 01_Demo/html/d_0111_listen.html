@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen</title>
+    <style>
+        .alpha{
+            list-style-type: lower-alpha;
+        }
+        .disc{
+            list-style-type: disc;
+        }
+        .icon{
+            list-style-image: url(../bilder/top.png);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Listen</h1>
+    <h2>Sortierte Liste</h2>
+    
+    <ol>
+        <li>Montag</li>
+            <!--ol>li*2-->
+            <ol class="alpha">
+                <li>Morgens</li>
+                <li>Abends</li>
+            </ol>
+        <li>Dienstag</li>
+        <li>Mittwoch</li>
+        <li>Donnerstag</li>
+        <li>Freitag</li>
+        <li>Samstag</li>
+        <li>Sonntag</li>
+    </ol>   
+    <h2>Unsortierte Liste</h2>
+    <!--ul>li*3-->
+    <ul class="disc">
+        <li>HTML</li>
+            <ul>
+                <li>HTML</li>
+                    <ul class="disc">
+                        <li>Grundlagen</li>
+                        <li>Weitere Befehle</li>
+                            <ul>
+                                <li>Listen</li>
+                                <li>Tabellen</li>
+                            </ul>
+                    </ul>
+                <li>CSS</li>
+            </ul>
+        <li>IT RECHNEN</li>
+        <li>LF 5</li>
+    </ul>
+
+    <h2>Gemischte Liste</h2>
+    <ol>
+        <li>Pizza</li>
+            <ul class="icon">
+                <li>Käse</li>
+                <li>Paprika</li>
+                <li>Schinken</li>
+            </ul>
+        <li>Döner</li>
+    </ol>
+</body>
+</html>

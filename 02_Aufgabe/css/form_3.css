@@ -1,0 +1,54 @@
+form{
+    text-align: center;
+    background-color: #003f4e;
+    border:1px solid #86c2bd ;
+    color: #86c2bd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+fieldset{
+    border-radius: 20px;
+    /* abstand noch aussen */
+    margin: 10px;
+}
+legend{
+    background-color: #86c2bd;
+    color: #003f4e;
+    border-radius: 10px;
+    padding: 5px;
+}
+label{
+    display: block
+}
+input, select{
+    width: 90%;
+    /* Runde Ecken  */
+    border-radius: 10px;
+    /* Innenabstand */
+    padding: 5px;
+}
+
+select{
+    width: 93%;
+}
+input[type=radio], input[type=checkbox]{
+    width: 2%;
+}
+input[type=submit], input[type=reset]{
+    width: 49%;
+}
+#infofeld{
+    text-align: left;
+}
+#infofeld label{
+    display: inline;
+}
+table{
+    width: 95%;
+}
+td{
+    border: 1px solid #86c2bd;
+}
+tr:nth-child(2n){
+    background-color: #86c2bd;
+    color: #003f4e;
+}

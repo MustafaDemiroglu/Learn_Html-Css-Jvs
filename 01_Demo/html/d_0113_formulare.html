@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulare</title>
+    <style>
+        label{
+            display: block;
+        }
+        .inline{
+            display: inline;
+        }
+        fieldset{
+            background-color: aqua;
+        }
+        select{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <form action="auswertung.php" method="post">
+        <!-- for ordnet das Label dem dazugehörigen element zu -->
+        <textarea name="nachricht" id="" cols="30" rows="5" style="color: red; background-color: pink; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            <!-- man könnte auch hier einen Text geben -->
+            
+        </textarea>
+
+        <fieldset>
+            <legend>
+                Persönliche Daten
+            </legend>
+        <label for="textfeld">Vorname:</label>
+        <input type="text" name="textfeld" placeholder="Ihr Vorname hier" required>
+        
+        <label for="textfeld">Nachname:</label>
+        <input type="text" name="nachname" value="Müller" maxlength="15">
+        
+        <label for="alter">Alter:</label>
+        <input type="number" name="alter" id="alter" min="1" max="200" step="0.01">
+
+        <label for="gebdatum">Geburtsdatum:</label>
+        <input type="date" name="gebdatum" id="gebdatum">
+
+        <label for="groesse">Größe:</label>
+        <input type="range" name="groesse" id="groesse">
+
+        <label for="geheim">Password:</label>
+        <input type="password" name="geheim" id="geheim" placeholder="Ihr Password hier" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,32}$" title="Das Passwort muss mindestens 8 Zeichen lang sein und aus Gross- und Kleinbuchstaben und mindestens einer Zahl und einem Sonderzeichen (!@#$%^&*_=+-) bestehen." minlength="8">
+        
+        <label for="datei">Datei:</label>
+        <input type="file" name="datei" id="datei">
+
+        <label for="farbe">Farbe:</label>
+        <input type="color" name="farbe" id="farbe">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend> Bitte wählen Sie hier Ihre Bestellun aus!</legend>
+        <input type="checkbox" name="pizza" id="belag1" value="Käse">
+        <label class="inline" for="belag1">Käse</label>
+        <input type="checkbox" name="pizza" id="belag2" value="Schinken">
+        <label class="inline" for="belag2">Schinken</label>
+        <input type="checkbox" name="pizza" id="belag3" value="Gemüse">
+        <label class="inline" for="belag3">Gemüse</label>
+
+        <input type="radio" name="doener" id="zutat1" value="Fleisch">
+        <label for="zutat1" class="inline">Fleisch</label>
+        <input type="radio" name="doener" id="zutat2" value="Salat">
+        <label for="zutat2" class="inline">Salat</label>
+        <input type="radio" name="doener" id="zutat3" value="Scharf">
+        <label for="zutat3" class="inline">Scharf</label>
+        <br><br>
+        <select name="kuchen" id="" size="3" style="display: flow-root;" >
+            
+            <optgroup>
+                <option value="Käse">Käsekuchen</option>
+                <option value="Donau">Donauwelle</option>
+                <option value="Mett">Mettbrötcehn</option>
+            </optgroup>
+            <optgroup>
+                <option value="Käse">Käsekuchen</option>
+                <option value="Donau">Donauwelle</option>
+                <option value="Mett">Mettbrötcehn</option>
+            </optgroup>
+            <optgroup>
+                <option value="Käse">Käsekuchen</option>
+                <option value="Donau">Donauwelle</option>
+                <option value="Mett">Mettbrötcehn</option> 
+            </optgroup>
+        </select>
+        <select name="kuchen" id="" size="3" style="display: flow-root;" >
+                <option value="Käse">Käsekuchen</option>
+                <option value="Donau">Donauwelle</option>
+                <option value="Mett">Mettbrötcehn</option>
+        </select>
+        <select name="kuchen" id="" size="3" style="display: flow-root;" >
+            
+            <optgroup>
+                Käsekuchen
+            </optgroup>
+            <optgroup>
+                Donauwelle
+            </optgroup>
+            <optgroup>
+                Mettbrötchen
+            </optgroup>
+        </select>
+        </fieldset>
+        <label for="mail">Mailadresse:</label>
+        <input type="email" name="mail" id="mail">
+        <br><br>
+
+        <input type="submit" value="Formular absenden">
+        <input type="submit" value="Formular button">
+        <input type="submit" value="Daten leeren"> 
+
+
+    </form>
+    
+</body>
+</html>

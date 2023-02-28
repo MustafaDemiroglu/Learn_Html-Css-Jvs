@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Schriftgestaltung</title>
+    <style>
+        body{
+            color: blue;
+            /* Schriftart*/
+            font-family: Arial, Helvetica, sans-serif;
+            /* einbindung vom Hintergerundbild */
+            background-image: url(../bilder/banner.gif);
+            /*repet (nach allen richtungen), repet-x (in reihe/linie,nebeneinander),repet-y (spalte,untereinander), no-repeat (nicht wiederholen)*/
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-attachment: fixed;
+            background-color: aqua;
+        }
+        h1{
+            color: red;
+            /*style z.b. (kursiv), italic*/ 
+            font-style:italic ;
+            /* textausrictung left (standard), center, right, justify (blocksatz)*/
+            text-align: right;
+            /*Abstand zwischend Buchstaben*/ 
+            letter-spacing: 30px;
+        }
+        p{
+            /*Blocksatz*/
+            text-align: justify;
+        }
+        /*first-line erste Reihe eines Text-Elements */
+        p:first-line{
+            background-color: gray;
+        }
+        .wichtig{
+            /* class =wichtig im html teil 
+            darf mehrmal verwendet werden*/
+            font-size: 24px;
+            /* abstand zwischende den Wörtern*/
+            word-spacing: 30px;
+        }
+        .ueberschrift{
+            background-color: red;
+            /*underline möglicgst vermeiden, da besucher von einem Link ausgehen könnte */
+            text-decoration: underline double;
+        }
+        /*id="absatz1" im html teil
+            nur einmal aufrufen /  vergeben*/
+        #absatz1{
+            background-color: yellow;
+        }
+        h3::first-letter{
+            font-size: 50px;
+            color: red;
+            font-family: 'Times New Roman', Times, serif;
+            border: 1px solid black;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Schriftgestaltung</h1>
+    <h2 id="absatz1" class="ueberschrift">Absatz 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quam nostrum ipsa tempora facilis perspiciatis nihil eligendi. Tempora eum mollitia hic voluptatem vero voluptate iste. Beatae adipisci sapiente excepturi praesentium?</p>
+    <h2 class="ueberschrift">Absatz 2</h2>
+    <p class="wichtig">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ad labore blanditiis similique, natus harum. Numquam, hic debitis in exercitationem incidunt, quas eaque quibusdam repudiandae alias deleniti, laborum ab eos.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore delectus vero eaque beatae iste, voluptates reiciendis dignissimos. Incidunt, reprehenderit eaque! Qui, exercitationem dicta provident fugit amet quasi non consequuntur quaerat!
+    </p>
+    <p class="wichtig">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, sed. Nisi eaque tenetur officiis exercitationem et at praesentium, aliquam ad magnam possimus. Atque sint aut architecto fugit saepe maiores nulla.</p>
+    <h3>Eine Überschrift</h3>
+</body>
+</html>

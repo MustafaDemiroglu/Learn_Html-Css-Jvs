@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilder Einbinden</title>
+    <style>
+        img{
+            /* rahmen: stärke liniert farbe */
+            /* solid ___________
+                dotted .........
+                dashed -----------
+                */
+            border: 5px dotted black;
+            width: 300px;
+            /* width = breite
+            height =höhe
+            */
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- alt wichtig für screenrader oder falls bild nicht geladen werden kann-->
+    <!--tile zeigt Zusatzinfo an bei mouseOver-->
+    <img src="../../01_Demo/bilder/Hund.jpg" alt="Brauner Hund" title="wuff"><br>
+    <img src="http://www.bellodrom.de/bilder/philosophie_g.jpg" alt="Leider hat Eigentümer dieses Bild gelöscht" title="Bild von Externe Webseite, Hund Springt">
+</body>
+</html>
