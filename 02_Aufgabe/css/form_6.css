@@ -1,0 +1,13 @@
+form, fieldset, legend{
+    border: 3px solid blue;
+    margin: 10px;
+    padding: 20px;
+    width: ;
+}
+legend{
+    background-color: red;
+    color: white;
+}
+body{
+    font-size: larger;
+}
