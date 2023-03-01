@@ -5,6 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        form{
+            border: 1px black solid ;
+            background-color: white;
+            width: 50%;
+            margin: 5px;
+            padding: 5px;
+        }
+        fieldset{
+            border: 1px black solid ;
+            background-color: gray;
+            margin: 5px;
+            padding: 5px;
+        }
+        legend{
+            border: 1px black solid ;
+            font-size: larger;
+            background-color: white;
+            margin: 5px;
+            padding: 5px;
+        }
+        input[type=text], input[type=password], input[type=email]{
+            width: 97%;
+        }
+    </style>
 </head>
 <body>
     <form action="">
@@ -13,7 +38,7 @@
             <label for="Mailadresse">Mailadresse</label><br>
             <input type="email" name="Mailadresse" id="Mailadresse" value="black@white"><br>
             Domain: <br>
-            <input type="radio" name="Domain" id="Domain" value="DE">
+            <input type="radio" name="Domain" id="Domain" value="DE" checked>
             <label for="Domain">DE</label> 
             <input type="radio" name="Domain" id="Domain" value="COM">
             <label for="Domain">COM</label>
@@ -22,9 +47,9 @@
             <input type="radio" name="Domain" id="Domain" value="ORC">
             <label for="Domain">ORC</label><br>
             <label for="username">User-Name:</label><br>
-            <input type="email" name="Mailadresse" id="Mailadresse" value="tester"><br>
-            <label for="Mailadresse">Mailadresse</label><br>
-            <input type="email" name="Mailadresse" id="Mailadresse" value="black@white"><br>
+            <input type="text" name="username" id="username" value="tester"><br>
+            <label for="paswort">Passwort</label><br>
+            <input type="password" name="passwort" id="passwort"><br>
 
         </fieldset>
     </form>

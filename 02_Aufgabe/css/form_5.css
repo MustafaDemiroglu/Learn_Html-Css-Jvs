@@ -1,0 +1,15 @@
+
+        
+
+           form{
+                width: 50%;
+                font-weight: bold;
+            }
+            fieldset, legend{
+                background-color: greenyellow;
+                border: 3px solid red;
+            }
+            input, label{
+                display: block;
+                margin: 5px;
+            }
