@@ -1,0 +1,26 @@
+p.ex1 {
+    border: 2px solid black;
+    outline-style: solid;
+    outline-color: #ff0000; /* red */
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  p.ex2 {
+    border: 2px solid black;
+    outline-style: dotted;
+    outline-color: #0000ff; /* blue */
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  p.ex3 {
+    border: 2px solid black;
+    outline-style: solid;
+    outline-color: #bbbbbb; /* grey */
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+  }
