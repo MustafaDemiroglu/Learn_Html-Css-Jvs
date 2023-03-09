@@ -2,28 +2,31 @@ p.ex1 {
     border: 2px solid black;
     outline-style: dashed;
     outline-color: #ff0000; /* red */
-    margin: 20px;
+    margin: 50px;
     padding: 20px;
     text-align: center;
     outline-width: thick;
+    outline-offset: 15px;
   }
   
   p.ex2 {
     border: 2px solid black;
     outline-style: dotted;
     outline-color: #0000ff; /* blue */
-    margin: 20px;
+    margin: 50px;
     padding: 20px;
     text-align: center;
     outline-width: medium;
+    outline-offset: 15px;
   }
   
   p.ex3 {
     border: 2px solid black;
     outline-style: ridge;
     outline-color: #bbbbbb; /* grey */
-    margin: 20px;
+    margin: 50px;
     padding: 20px;
     text-align: center;
     outline-width: thin;
+    outline-offset: 15px;
   }
