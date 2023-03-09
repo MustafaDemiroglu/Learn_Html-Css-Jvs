@@ -1,0 +1,35 @@
+#a{
+    background-color: aqua;
+    color: crimson;
+    vertical-align: baseline;
+    height: 50px;
+    width: 200px;
+}
+#b{
+    background-color: aqua;
+    color: crimson;
+    vertical-align: text-top;
+    height: 50px;
+    width: 200px;
+}
+#c{
+    background-color: aqua;
+    color: crimson;
+    vertical-align: text-bottom;
+    height: 50px;
+    width: 200px;
+}
+#d{
+    background-color: aqua;
+    color: crimson;
+    vertical-align: sub;
+    height: 50px;
+    width: 200px;
+}
+#e{
+    background-color: aqua;
+    color: crimson;
+    vertical-align: super;
+    height: 50px;
+    width: 200px;
+}
