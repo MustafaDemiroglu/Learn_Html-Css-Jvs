@@ -10,7 +10,7 @@ body {
 }
 
 .background-container {
-  background-image: url('pfad/zum/hintergrundbild.jpg');
+  background-image: url("hintergrundbild.jpg");
   width: 100%;
   height: 100%;
   position: fixed;
