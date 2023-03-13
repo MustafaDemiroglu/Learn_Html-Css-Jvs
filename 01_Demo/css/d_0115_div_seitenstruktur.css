@@ -8,28 +8,29 @@ body{
     height: 100%;
 }
 
-div{
+div, header, nav, main, footer{
     border: 1px solid black;
     padding: 10px;
     margin-bottom: 10px; ;
 }
 
-#header{
+header{
     background-color: yellow;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
-#navi{
+nav{
     background-color: white;
     text-align: center;
 }
 
-#navi ul li{
+nav ul li{
     display: inline;
     list-style-type: none;
 }
 
-#inhalt{
+main{
     /* margin-top: 20px;
     margin-bottom: 20px;
     weil wir unten schon margin: auto; haben */
@@ -40,6 +41,37 @@ div{
     overflow: auto;
 }
 
-#footer{
+article{
+    color: red;
+    width: 40%;
+}
+
+#art1{
+    color: blue;
+    float: left;
+}
+
+#art2{
+    float: right;
+}
+
+footer{
     background-color: green;
+}
+
+a{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav a, footer a{
+    text-decoration: none;
+}
+
+#art1 a{
+    text-decoration: underline double;
+    font-size: 12px;
+}
+
+article ul li a{
+    font-size: 48px;
 }
