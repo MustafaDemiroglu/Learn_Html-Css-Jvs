@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div-Container</title>
+    <style>
+        body{
+            background-color: #cccccc;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 10px; ;
+        }
+        #header{
+            background-color: yellow;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #navi{
+            background-color: white;
+            text-align: center;
+        }
+        #navi ul li{
+            display: inline;
+            list-style-type: none;
+        }
+        #inhalt{
+            /* margin-top: 20px;
+            margin-bottom: 20px;
+            weil wir unten schon margin: auto; haben */
+            /*padding: 50px;*/
+            width: 80%;
+            margin: 20px auto;
+            height: 200px;
+            overflow: auto;
+        }
+        #footer{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"><h1>Div-Container</h1></div>
+    <div id="navi">
+        <!-- ul>li*3>a -->
+        <ul>
+            <li><a href="#">Seite 1</a></li>
+            <li><a href="#">Seite 2</a></li>
+            <li><a href="#">Seite 3</a></li>
+        </ul>
+    </div>
+    <div id="inhalt">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, id iusto. Vel, blanditiis? Odio, cupiditate delectus libero at sint repudiandae id reiciendis nostrum accusamus rem minima maxime consequatur? Illum, eos?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam asperiores consectetur quaerat consequatur voluptatibus odio excepturi vero accusantium totam provident ab quam officiis vitae, deserunt eligendi quis nam pariatur dicta!</p>
+        <ul>
+            <li>Liste 1</li>
+            <li>Liste 2</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem illum perferendis repellendus tempora unde. Facilis, quisquam expedita in, deserunt accusantium hic ipsum cumque officiis, commodi culpa autem ut rerum ad!</p>
+    </div>
+    <div id="footer"><a href="#">Impressun</a></div>
+</body>
+</html>
