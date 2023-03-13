@@ -1,0 +1,29 @@
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+article{
+    border: 1px solid black;
+    /* width: 30%; */
+    /* height: 300px; */
+}
+
+/* #art1{
+    float: left;
+}
+
+#art2{
+    float: left;
+}
+
+#art3{
+    float: left;
+}
+
+#art4{
+    border: 2px solid red;
+    width: 100%;
+    clear: both;
+} */
+
