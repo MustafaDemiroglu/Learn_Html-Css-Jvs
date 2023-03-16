@@ -1,0 +1,41 @@
+html, body{
+    height: 98%;
+}
+
+div{
+    border: 1px solid black;
+    flex: 1;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 60%;
+}
+
+
+#r2, #r4{
+    display: flex;
+    flex-direction: row;
+}
+
+#r2s1, #r2s3{
+    display: flex;
+    flex-direction: column;
+    border: 0px;
+    
+}
+
+#r3{
+    flex: 2;
+}
+
+#r4, #r2{
+    flex: 3;
+}
+
+#r4s1{
+    flex: 2;
+}
+
