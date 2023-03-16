@@ -1,0 +1,91 @@
+html, body{
+    height: 98%;
+}
+
+div{
+    border: 1px solid black;
+    flex: 1;
+    border-top: none;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    border-top: none;
+    border-left: none;
+}
+
+#r1, #r1s1, #r1s2, #r1s3, #r1s4{
+    border-top: none;
+}
+
+#r1{
+border-left: none;
+}
+
+#r1s1, #r1s3, #r1s4{
+    border: none;
+}
+
+#r1, #r2, #r3, #r5{
+    display: flex;
+    flex-direction: row;
+} 
+
+#r1, #r4, #r5{
+    flex: 1;
+}
+
+#r2{
+    flex: 3;
+}
+
+#r3{
+    flex: 6;
+}
+
+#r2s2, #r2s3{
+    border: none;
+}
+
+#r2s2{
+    flex: 2;
+}
+
+#r3s1{
+    display: flex;
+    flex-direction: column;
+    border-left: none;
+}
+
+#r3s1r4 {
+    flex: 3;
+    border-left: none;
+}
+
+#r3s3{
+    border: none;
+}
+
+#r3s4{
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#r3s{
+    border-left: none;
+}
+
+#r4{
+    border-left: none;
+}
+#r3s4r1, #r3s4r2, #r3s4r3, #r5s1{
+    border-left: none;
+}
+
+#r4s4,  #r4s3{
+    border: none;
+}
