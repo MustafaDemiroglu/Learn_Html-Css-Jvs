@@ -1,0 +1,32 @@
+html, body, #wrapper{
+    height: 99%;
+}
+div{
+    border: 1px solid black;
+    /* jedes elemet braucht eine größe --> 1 anteil von Breite bzw. Höhe */
+    flex: 1;
+}
+#wrapper{
+    /* #wrapper ist ein elternelement von reihe 1 -reihe3  */
+    display: flex;
+    /* reihe 1 bis 3 soll untereinander */
+    flex-direction: column;
+}
+#reihe2{
+    /* elternelemet für reihe 2, mitte und 5 */
+    display: flex;
+    /* anordnung nebeneinander */
+    flex-direction: row;
+    /* 2 Anteile von bereite */
+    flex: 2;
+}
+#mitte{
+    flex: 3;
+    /* eltern element für 3 und 4 */
+    display: flex;
+    /* untereinander */
+    flex-direction: column;
+}
+#reihe3{
+    flex: 0.5;
+}

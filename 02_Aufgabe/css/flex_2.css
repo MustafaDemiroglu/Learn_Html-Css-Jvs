@@ -1,0 +1,26 @@
+html, body, #wrapper{
+    height: %98;
+}
+
+div{
+    border: 1px solid black;
+    flex: 1;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+#r2, #r3, #r4, #r6{
+    display: flex;
+    flex-direction: row;
+}
+
+#r1, #r3{
+    flex: 2;
+}
+
+#r2{
+    flex: 3;
+}
