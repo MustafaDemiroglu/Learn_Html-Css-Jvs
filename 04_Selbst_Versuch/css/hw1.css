@@ -1,0 +1,23 @@
+header{
+    background-color: aqua;
+    text-transform: capitalize;
+
+}
+
+h1, h2{
+    text-align: center;
+}
+
+section{
+    background-color: aquamarine;
+}
+
+a{
+    background-color: beige;
+    color: blue;
+    text-align: center;
+}
+
+img{
+
+}
