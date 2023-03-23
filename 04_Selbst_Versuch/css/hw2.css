@@ -1,0 +1,51 @@
+/* Style the following:  */
+
+/* The body should have padding and margin  */
+
+body{
+    padding: 10px;
+    margin: 5px;
+}
+
+/* The header should have a background color, background image (using a local image), and padding  */
+
+header{
+    background-color: rgb(75, 161, 133);
+    background-image: url(../images/flywheel.jpg);
+    padding: 5px;
+}
+
+/* The navigation links (and only the links in the navigation) should be styled with a new display, margin, border-radius, text-decoration, and padding  */
+
+nav a {
+    display: block;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+    color: blue;
+  }
+
+/* The link to the current page should be styled differently from the other links (using class = "active')  */
+
+nav a.active {
+    background-color: blue;
+    color: white;
+  }
+
+/* The sections should be next to each other, not one on top of the other.  */
+
+section{
+    float: left;
+}
+
+
+/* The images should be part of the page now. In addition, they should have a border, be centered horizontally, and have vertical (top/bottom) space between them and the other images. */
+
+img {
+    border: 2px solid black;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
