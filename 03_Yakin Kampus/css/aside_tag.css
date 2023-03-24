@@ -1,0 +1,26 @@
+header, footer, section, aside, article{
+    display: block;
+}
+
+body{
+    text-align: center;
+}
+
+#ana_kisim{
+    width: 1000px;
+    margin: 15px auto;
+}
+
+#orta{
+    width: 700px;
+    float: left;
+    text-align: left;
+}
+
+#yan{
+    width: 270px;
+    padding: 10px;
+    float: right;
+    text-align: left;
+    border: 3px dashed red;
+}
