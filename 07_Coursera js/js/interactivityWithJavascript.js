@@ -1,6 +1,21 @@
 
 
 
+
+
+
+/*
+function closeMe() {
+    //find th eement
+    x=document.getElementById("demo");
+    //Option1: Change the style attribute directly
+    //x.style.display="none";
+
+    //option2:change the class
+    x.className="closed"
+}
+*/
+/* 
 function message(msg) {
     document.getElementById('output').innerHTML=msg+"event";
 }
@@ -8,15 +23,7 @@ function message(msg) {
 function displayDate() {
     document.getElementById("demo").innerHTML=Date();
 }
-
-
-
-
-
-
-
-
-
+*/
 /*
 //Return Values
 function welcomeMsg(msg) {
