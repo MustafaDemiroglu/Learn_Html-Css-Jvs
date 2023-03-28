@@ -1,0 +1,65 @@
+html, body, #wrapper{
+    height: 99.5%;
+} 
+
+#wrapper{
+    display: grid;
+    grid-template-rows:10% 10% 10% 10%;
+    grid-template-columns:20% 20% 20% 20%;
+}
+
+#rot{
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#grün{
+    background-color: green;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#gelb{
+    background-color: yellow;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#orange{
+    background-color: orange;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#aqua{
+    background-color: aqua;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#grau{
+    background-color: grey;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#blau{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}

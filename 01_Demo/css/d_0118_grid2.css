@@ -1,0 +1,49 @@
+html, body, #wrapper{
+    height: 99%;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-rows: 25% 50% 25%;
+    grid-template-columns: 20% 60% 20%;
+}
+
+#blau{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#rot{
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#orange{
+    background-color: orange;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#gelb{
+    background-color: yellow;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#grün{
+    background-color: green;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
