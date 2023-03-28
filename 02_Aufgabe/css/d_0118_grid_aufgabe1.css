@@ -1,0 +1,77 @@
+html, body, #wrapper{
+    height: 99%;
+}
+
+#wrapper{
+    height:98vh;
+    display: grid;
+    grid-template-rows: auto;
+        grid-template-columns: auto;
+    grid-template-areas:
+    'r1 r1 r1 r2 r2'
+    'r3 r4 r4 r2 r2'
+    'r3 r4 r4 r6 r6'
+    'r5 r5 r5 r6 r6'
+    'r7 r8 r8 r8 r9'
+    'r7 r8 r8 r8 r9';
+}
+
+@media screen and (max-width: 800px) {
+    #wrapper{
+        display: grid;
+        grid-template-rows: 24% 24% 24% 24%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+    'r1 r1 r1'
+    'r8 r8 r8'
+    'r3 r7 r9'
+    'r4 r4 r4';
+    }
+}
+
+#gelb{
+    background-color: yellow;
+    grid-area: r1;
+}
+
+#grün{
+    background-color: green;
+    grid-area: r2;
+}
+
+
+#beige{
+    background-color: coral;
+    grid-area: r3;
+}
+
+#blue{
+    background-color: blue;
+    grid-area: r4;
+}
+
+#aqua{
+    background-color: aqua;
+    grid-area: r5;
+}
+
+#somon{
+    background-color: rgb(173, 173, 76);
+    grid-area: r6;
+}
+
+#grau{
+    background-color: lightgray;
+    grid-area: r7;
+}
+
+#lila{
+    background-color: purple;
+    grid-area: r8;
+}
+
+#hellgrau{
+    background-color: rgb(149, 146, 146);
+    grid-area: r9;
+}
+

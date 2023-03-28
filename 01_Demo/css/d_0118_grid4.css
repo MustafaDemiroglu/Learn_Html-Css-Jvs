@@ -1,61 +1,102 @@
-html,body, #wrapper{
+html, body, #wrapper{
     height: 99%;
-    margin: 0;
 }
 
-#wrapper{
-    display:grid;
-    grid-template-columns:75% 25% ;
-    grid-template-rows: 10% 10% 70% 10% ;
+article{
+    background-color: bisque;
+    grid-area: inhalt;
+}
+
+header, article, aside, footer{
+    padding: 10px;
 }
 
 header{
-    background-color: aquamarine;
+    background-color: aqua;
+    grid-area: header;
     text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
 }
 
 nav{
-    background-color: bisque;
+    background-color: gray;
+    grid-area: navigation;
+}
+
+nav ul{
     text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
 }
 
 nav ul li{
     display: inline;
-    margin: 0,auto;
-    padding: 10px;
-} 
-
-article{
-    background-color: burlywood;
     text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    padding: 5px;
 }
 
 aside{
-    background-color: greenyellow;
-    text-align: center;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    background-color: brown;
+    grid-area: randnotiz;
 }
 
 footer{
-    background-color: khaki;
+    background-color: yellow;
+    grid-area: footer;
     text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    margin: 0, auto ;
 }
+
+footer a{
+    display: inline;
+    color: rgb(30, 8, 51);
+    padding: 5px;
+}
+
+/* wenn fenster schmaler als 800px...... alles untereiander angeordnet */
+#wrapper{
+    height: 98vh;
+    display: grid;
+    /* fr=fraction=anteil */
+    /* wenn fenster 575px hoch wäre
+    575-75-50-50=400
+    400/4=100=1fr
+    3fr=300px
+    */
+    grid-template-rows: 75px 50px 3fr 1fr 50px;
+    grid-template-areas: 
+    'header'
+    'navigation'
+    'inhalt'
+    'randnotiz'
+    'footer';
+}
+
+/* wenn fenster mind.800px breit ist */
+
+@media screen and (min-width: 800px){
+    #wrapper{
+        grid-template-rows: 75px 1fr 50px;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-areas:
+        'header header header'
+        'navigation inhalt randnotiz'
+        'footer footer footer';
+    }
+
+    nav ul li{
+        display: block;
+    }
+
+    aside{
+        background-color: greenyellow;
+    }
+}
+
+@media print{
+    #wrapper{
+        grid-template-rows: auto auto;
+        grid-template-columns: 101%;
+        grid-template-areas: 
+            'header'
+            'inhalt'
+            'randnotiz';
+    }
+} 

@@ -1,0 +1,89 @@
+html, body, #wrapper{
+    height: 99%;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        'orange1 gelb2 gelb2 hellblau3 hellblau3'
+        'orange1 gelb2 gelb2 hellblau3 hellblau3'
+        'orange1 grün4 grün4 hellblau3 hellblau3'
+        'orange1 grün4 grün4 hellblau3 hellblau3'
+        'orange1 grün4 grün4 blau5 blau5'
+        'orange1 grün4 grün4 blau5 blau5'
+        'rot6 rot6 rot6 hellgrau7 schwarz8'
+        'rot6 rot6 rot6 hellgrau7 schwarz8'
+        'rot6 rot6 rot6 hellgrau7 schwarz8'
+        'rot6 rot6 rot6 hellgrau7 schwarz8'
+        'rot6 rot6 rot6 hellgrün9 somon10'
+        'rot6 rot6 rot6 hellgrün9 somon10'
+        'rot6 rot6 rot6 hellgrün9 somon10';
+}
+
+@media screen and (max-width:800px) {
+    #wrapper{
+        display: grid;
+        grid-template-rows:50% 16.7% 16.7% 16.6%;
+        grid-template-columns: 99%;
+        grid-template-areas:
+        'rot6'
+        'grün4'
+        'hellblau3'
+        'orange1';
+    }
+    #gelb, #blau, #hellgrau, #schwarz, #hellgrün, #somon{
+        visibility: hidden;
+    }
+}
+
+#orange{
+    background-color: orange;
+    grid-area: orange1;
+}
+
+#gelb{
+    background-color: yellow;
+    grid-area: gelb2;
+}
+
+#hellblau{
+    background-color: lightblue;
+    grid-area: hellblau3;
+}
+
+#grün{
+    background-color: green;
+    grid-area: grün4;
+}
+
+#blau{
+    background-color: blue;
+    grid-area: blau5;
+}
+
+#rot{
+    background-color: red;
+    grid-area: rot6;
+}
+
+#hellgrau{
+    background-color: lightslategray;
+    grid-area: hellgrau7;
+}
+
+#schwarz{
+    background-color: black;
+    grid-area: schwarz8;
+}
+
+#hellgrün{
+    background-color: lightgreen;
+    grid-area: hellgrün9;
+}
+
+#somon{
+    background-color: salmon;
+    grid-area: somon10;
+}
