@@ -1,0 +1,1 @@
+// JavaScript-Animationen und Funktionalität können hier hinzugefügt werden

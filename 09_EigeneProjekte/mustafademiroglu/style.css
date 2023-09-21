@@ -1,0 +1,46 @@
+/* Grundlegende Stildefinitionen */
+
+body {
+    background-color: #000; /* Hintergrundfarbe schwarz */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header img {
+    max-width: 100px; /* Kleines Foto oben */
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.profile {
+    background-image: url("Bewerbungsfoto.jpg");
+    background-position: 100%;
+}
