@@ -42,48 +42,33 @@ public abstract class Document {
 		return tokens;
 	}
 	
-	// This is a helper function that returns the number of syllables
-	// in a word.  You should write this and use it in your 
-	// BasicDocument class.
-	// You will probably NOT need to add a countWords or a countSentences method
-	// here.  The reason we put countSyllables here because we'll use it again
-	// next week when we implement the EfficientDocument class.
+	/** This is a helper function that returns the number of syllables
+	 * in a word.  You should write this and use it in your 
+	 * BasicDocument class.
+	 * 
+	 * You will probably NOT need to add a countWords or a countSentences 
+	 * method here.  The reason we put countSyllables here because we'll 
+	 * use it again next week when we implement the EfficientDocument class.
+	 * 
+	 * For reasons of efficiency you should not create Matcher or Pattern 
+	 * objects inside this method. Just use a loop to loop through the 
+	 * characters in the string and write your own logic for counting 
+	 * syllables.
+	 * 
+	 * @param word  The word to count the syllables in
+	 * @return The number of syllables in the given word, according to 
+	 * this rule: Each contiguous sequence of one or more vowels is a syllable, 
+	 *       with the following exception: a lone "e" at the end of a word 
+	 *       is not considered a syllable unless the word has no other syllables. 
+	 *       You should consider y a vowel.
+	 */
 	protected int countSyllables(String word)
-	{ {
+	{
+        List<String> tokens = getTokens("[aeiouyAEIOUY]+");
+        List<String> loneEs = getTokens("[^aeiouyAEIOUY]+[eE]\\b");
+        List<String> singleEs = getTokens("\\b[^aeiouyAEIOUY]*[eE]\\b");
 
-		// TODO: Implement this method so that you can call it from the
-
-		// getNumSyllables method in BasicDocument (module 1) and
-
-		// EfficientDocument (module 2).
-
-		int num = 0;
-
-		String pattern = "[aeiouyAEIOUY]+";
-
-		Pattern tokSplitter = Pattern.compile(pattern);
-
-		Matcher m = tokSplitter.matcher(word);
-
-		String lastToken = "";
-
-		while (m.find()) {
-
-		num++;
-
-		lastToken = m.group();
-
-		}
-
-		if(num > 1 && word.charAt(word.length()-1) == 'e' && lastToken.equals("e")) {
-
-		num--;
-
-		}
-
-		return num;
-
-		}
+        return tokens.size() - (loneEs.size() - singleEs.size());
 	}
 	
 	/** A method for testing
@@ -146,16 +131,9 @@ public abstract class Document {
 	/** return the Flesch readability score of this document */
 	public double getFleschScore()
 	{
-		double words = (double)getNumWords();
-
-		double sentences = (double)getNumSentences();
-
-		double syllables = (double)getNumSyllables();
-
-		double fleschScore = 206.835 - 1.015*(words/sentences) - 84.6*(syllables/words);
-
-		double finalValue = Math.round(fleschScore*100.0)/100.0;
-
-		return finalValue;
+	    return 206.805-1.015*((double)getNumWords()/getNumSentences())-84.6*((double)getNumSyllables()/getNumWords());
 	}
+	
+	
+	
 }
